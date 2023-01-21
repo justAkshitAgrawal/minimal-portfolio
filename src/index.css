@@ -2,3 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
+
+@font-face {
+  font-family: "BaronNeue";
+  src: local("GoldmanBold"), url("./fonts/Baron.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "BaronNeueBold";
+  src: local("GoldmanBold"), url("./fonts/Baron-Bold.otf") format("opentype");
+  font-weight: bold;
+}
+
+.font-baron {
+  font-family: "BaronNeue";
+}
+
+.font-baron-bold {
+  font-family: "BaronNeueBold";
+}
+
+@layer components {
+  .info {
+    @apply text-white cursor-pointer transition-all hover:underline;
+  }
+}
