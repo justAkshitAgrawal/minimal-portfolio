@@ -52,8 +52,8 @@ function About() {
               Akshit Agrawal
             </h1>
             <h1 className="mt-6 text-lg">
-              I'm a Front End Developer <br /> Trying to make the web a better{" "}
-              <br /> Connect with me to discuss awesome ideas
+              I'm a Front End Developer <br /> Trying to make the web a better
+              place <br /> Connect with me to discuss awesome ideas
             </h1>
             <div className="flex items-center mt-5 space-x-5">
               <a

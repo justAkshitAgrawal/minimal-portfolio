@@ -27,60 +27,19 @@ import RowNine from "../components/desktop/RowNine";
 function Home() {
   return (
     <div className=" h-screen bg-[#0F0F0F] font-baron uppercase flex flex-col items-center justify-center">
-      <div className=" lg:hidden md:max-w-[60vw] md:text-xl">
-        <FadeIn from="left" durationInMilliseconds={2000}>
+      <FadeIn from="left" durationInMilliseconds={2500}>
+        <div className=" lg:hidden md:max-w-[60vw] md:text-xl grid text-[#757575]/30 gap-x-5 grid-cols-8 place-items-center gap-y-4">
           <FirstRow />
-        </FadeIn>
-        <FadeIn
-          from="left"
-          durationInMilliseconds={2000}
-          delayInMilliseconds={200}
-        >
           <SecondRow />
-        </FadeIn>
-        <FadeIn
-          from="left"
-          durationInMilliseconds={2000}
-          delayInMilliseconds={400}
-        >
           <ThirdRow />
-        </FadeIn>
-        <FadeIn
-          from="left"
-          durationInMilliseconds={2000}
-          delayInMilliseconds={600}
-        >
           <FourthRow />
-        </FadeIn>
-        <FadeIn
-          from="left"
-          durationInMilliseconds={2000}
-          delayInMilliseconds={800}
-        >
           <FifthRow />
-        </FadeIn>
-        <FadeIn
-          from="left"
-          durationInMilliseconds={2000}
-          delayInMilliseconds={1000}
-        >
           <SixthRow />
-        </FadeIn>
-        <FadeIn
-          from="left"
-          durationInMilliseconds={2000}
-          delayInMilliseconds={1200}
-        >
           <SeventhRow />
-        </FadeIn>
-        <FadeIn
-          from="left"
-          durationInMilliseconds={2000}
-          delayInMilliseconds={1400}
-        >
           <EightRow />
-        </FadeIn>
-      </div>
+        </div>
+      </FadeIn>
+
       <FadeIn from="left" durationInMilliseconds={2500}>
         <div className="hidden text-xl text-[#757575]/30 gap-x-12 lg:grid grid-cols-16 place-items-center gap-y-4">
           <RowNTwo />
