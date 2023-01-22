@@ -16,6 +16,8 @@ import { Link } from "react-scroll";
 import { FadeIn } from "react-slide-fade-in";
 import me from "../media/me.jpg";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import scrollify from "../media/scrollify.png";
+import jobstry from "../media/jobstry.png";
 
 function MobileAbout() {
   const navigate = useNavigate();
@@ -146,29 +148,39 @@ function MobileAbout() {
         </div>{" "}
         <div className="flex items-center justify-center w-screen px-5 pt-20 space-x-4 ">
           <Carousel autoPlay={false} showArrows={false} showStatus={false}>
-            <div className="flex flex-col bg-[#292929]/40 p-5 mb-10 rounded-2xl items-start shadow-md shadow-black  ">
-              <h1 className="text-xl ">Front-end Intern</h1>
-              <h1>Scrollify</h1>
-              <div className="flex mt-3 text-sm space-x-1 text-[#969695] ">
-                <h1>January 2023</h1>
-                <h1>-</h1>
-                <h1>Present</h1>
+            <div className="flex  bg-[#292929]/40 p-5 mb-10 rounded-2xl items-start shadow-md shadow-black  ">
+              <div className="flex flex-col items-start">
+                <h1 className="text-xl ">Front-end Intern</h1>
+                <h1>Scrollify</h1>
+                <div className="flex mt-3 text-sm space-x-1 text-[#969695] ">
+                  <h1>January 2023</h1>
+                  <h1>-</h1>
+                  <h1>Present</h1>
+                </div>
+                <h1 className=" mt-5 text-[#575757] text-start ">
+                  • Developing the web app Scrollify.
+                </h1>
               </div>
-              <h1 className=" mt-5 text-[#575757] text-start ">
-                • Developing the web app Scrollify.
-              </h1>
+              <div>
+                <img src={scrollify} alt="" className="h-12 " />
+              </div>
             </div>
-            <div className="flex flex-col bg-[#292929]/40 p-5 mb-10 rounded-2xl items-start shadow-md shadow-black  ">
-              <h1 className="text-xl ">Front-end Intern</h1>
-              <h1>Jobs Territory</h1>
-              <div className="flex mt-3 text-sm space-x-1 text-[#969695] ">
-                <h1>June 2022</h1>
-                <h1>-</h1>
-                <h1>August 2022</h1>
+            <div className="flex bg-[#292929]/40 p-5 mb-10 rounded-2xl items-start shadow-md shadow-black  ">
+              <div className="flex flex-col items-start">
+                <h1 className="text-xl ">Front-end Intern</h1>
+                <h1>Jobs Territory</h1>
+                <div className="flex mt-3 text-sm space-x-1 text-[#969695] ">
+                  <h1>June 2022</h1>
+                  <h1>-</h1>
+                  <h1>August 2022</h1>
+                </div>
+                <h1 className=" mt-5 text-[#575757] text-start ">
+                  • Developed an ATS for the company. Led a team of 3 interns.
+                </h1>
               </div>
-              <h1 className=" mt-5 text-[#575757] text-start ">
-                • Developed an ATS for the company. Led a team of 3 interns.
-              </h1>
+              <div>
+                <img src={jobstry} alt="" className="h-16 " />
+              </div>
             </div>
           </Carousel>
         </div>

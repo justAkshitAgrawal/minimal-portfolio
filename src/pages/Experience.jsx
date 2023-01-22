@@ -1,9 +1,12 @@
 import React from "react";
 import { FaLongArrowAltDown, FaLongArrowAltLeft } from "react-icons/fa";
+import { Carousel } from "react-responsive-carousel";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-scroll";
 import { FadeIn } from "react-slide-fade-in";
 import ExpCard from "../components/Experience/ExpCard";
+import scrollify from "../media/scrollify.png";
+import jobstry from "../media/jobstry.png";
 
 function Experience() {
   const navigate = useNavigate();
@@ -40,30 +43,34 @@ function Experience() {
         </Link>
       </FadeIn>
       <div
-        className="text-white justify-self-end mx-[20vw] py-20 h-screen flex items-center justify-center space-x-16"
+        className="text-white mx-[20vw] py-20 h-screen flex flex-col items-center justify-center mr-1"
         id="exp"
       >
-        <ExpCard
-          job={"Front-end Intern"}
-          company={"Scrollify"}
-          startDate={"January 2023"}
-          description={[
-            "Developing the web app Scrollify.",
-            "Making a website for the company.",
-            "Developing a portfolio generator. ",
-          ]}
-        />
-        <ExpCard
-          job={"Front-end Intern"}
-          company={"Jobs Territory"}
-          startDate={"June 2022"}
-          endDate={"August 2022"}
-          description={[
-            "Developed an ATS for the company.",
-            "Redesigned the company's website.",
-            "Led a team of 3 interns.",
-          ]}
-        />
+        <Carousel autoPlay={false} showStatus={false} width={"60%"}>
+          <ExpCard
+            job={"Front-end Intern"}
+            company={"Scrollify"}
+            startDate={"January 2023"}
+            description={[
+              "Developing the web app Scrollify.",
+              "Making a website for the company.",
+              "Developing a portfolio generator. ",
+            ]}
+            logo={scrollify}
+          />
+          <ExpCard
+            job={"Front-end Intern"}
+            company={"Jobs Territory"}
+            startDate={"June 2022"}
+            endDate={"August 2022"}
+            description={[
+              "Developed an ATS for the company.",
+              "Redesigned the company's website.",
+              "Led a team of 3 interns.",
+            ]}
+            logo={jobstry}
+          />
+        </Carousel>
       </div>
     </div>
   );

@@ -34,27 +34,27 @@ function MobileContact() {
           <h1 className=" info">T</h1>
           <h1>X</h1>
         </div>
-        <Link to="about" smooth={true}>
+        <Link to="contact" smooth={true}>
           <FaLongArrowAltDown className="absolute text-white bottom-5 left-[50%] animate-bounce h-5 w-5" />
         </Link>
       </FadeIn>
 
       <div
-        className="text-white justify-self-end mx-[10vw] h-screen relative flex flex-col items-center justify-center "
-        id="about"
+        className="text-white justify-self-end mx-[20vw] py-20 h-screen flex items-center justify-center space-x-16"
+        id="contact"
       >
-        <div className="flex flex-col items-center justify-center p-5 bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-2xl">
-          <div className="flex flex-col items-center justify-center ">
+        <div className="flex flex-col items-center p-10 bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-2xl">
+          <h1 className="uppercase ">Reach out to me </h1>
+          <div className="flex items-center mt-5 space-x-6 ">
             <a
               href="mailto:akshitaggarwal7@gmail.com"
               target="_blank"
               rel="noreferrer"
               className="self-start "
             >
-              <div className="flex items-center space-x-2 ">
-                <MdMail className="w-5 h-5 mt-1 text-[#de4032]" />
-                <h1>Send an email</h1>
-                <FaLongArrowAltRight className="mt-1 text-white/30" />
+              <div className="flex flex-col items-center self-start space-x-3 mt-7 bg-[#0f0f0f]/50 p-5 rounded-xl ">
+                <MdMail className="w-7 h-7 text-[#de4032]" />
+                {/* <h1 className="text-sm ">Send an email</h1> */}
               </div>
             </a>
             <a
@@ -63,10 +63,9 @@ function MobileContact() {
               rel="noreferrer"
               className="self-start "
             >
-              <div className="flex items-center self-start mt-4 space-x-2">
-                <FaLinkedinIn className="w-5 h-5 mt-1 text-[#0077b5]" />
-                <h1>Connect with me</h1>{" "}
-                <FaLongArrowAltRight className="mt-1 text-white/30" />
+              <div className="flex flex-col items-center self-start space-x-3 mt-7 bg-[#0f0f0f]/50 p-5 rounded-xl ">
+                <FaLinkedinIn className="w-7 h-7 text-[#0077b5]" />
+                {/* <h1>Connect with me</h1> */}
               </div>
             </a>
             <a
@@ -75,10 +74,9 @@ function MobileContact() {
               rel="noreferrer"
               className="self-start "
             >
-              <div className="flex items-center self-start mt-4 space-x-2">
-                <AiFillInstagram className="w-5 h-5 mt-1 text-[#DD2A7B]" />
-                <h1>Send a DM</h1>{" "}
-                <FaLongArrowAltRight className="mt-1 text-white/30" />
+              <div className="flex flex-col items-center self-start space-x-3 mt-7 bg-[#0f0f0f]/50 p-5 rounded-xl">
+                <AiFillInstagram className="w-7 h-7 text-[#DD2A7B]" />
+                {/* <h1>Send a DM</h1> */}
               </div>
             </a>
           </div>
