@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function RowName() {
   const [isHovered, setIsHovered] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <>
@@ -17,6 +19,9 @@ function RowName() {
         onMouseOut={() => {
           setIsHovered(false);
         }}
+        onClick={() => {
+          navigate("/about");
+        }}
       >
         A
       </h1>
@@ -30,6 +35,9 @@ function RowName() {
         }}
         onMouseOut={() => {
           setIsHovered(false);
+        }}
+        onClick={() => {
+          navigate("/about");
         }}
       >
         K
@@ -45,6 +53,9 @@ function RowName() {
         onMouseOut={() => {
           setIsHovered(false);
         }}
+        onClick={() => {
+          navigate("/about");
+        }}
       >
         S
       </h1>
@@ -58,6 +69,9 @@ function RowName() {
         }}
         onMouseOut={() => {
           setIsHovered(false);
+        }}
+        onClick={() => {
+          navigate("/about");
         }}
       >
         H
@@ -73,6 +87,9 @@ function RowName() {
         onMouseOut={() => {
           setIsHovered(false);
         }}
+        onClick={() => {
+          navigate("/about");
+        }}
       >
         I
       </h1>
@@ -86,6 +103,9 @@ function RowName() {
         }}
         onMouseOut={() => {
           setIsHovered(false);
+        }}
+        onClick={() => {
+          navigate("/about");
         }}
       >
         T
@@ -102,6 +122,9 @@ function RowName() {
         onMouseOut={() => {
           setIsHovered(false);
         }}
+        onClick={() => {
+          navigate("/about");
+        }}
       >
         A
       </h1>
@@ -115,6 +138,9 @@ function RowName() {
         }}
         onMouseOut={() => {
           setIsHovered(false);
+        }}
+        onClick={() => {
+          navigate("/about");
         }}
       >
         G
@@ -130,6 +156,9 @@ function RowName() {
         onMouseOut={() => {
           setIsHovered(false);
         }}
+        onClick={() => {
+          navigate("/about");
+        }}
       >
         R
       </h1>
@@ -144,6 +173,9 @@ function RowName() {
         onMouseOut={() => {
           setIsHovered(false);
         }}
+        onClick={() => {
+          navigate("/about");
+        }}
       >
         A
       </h1>
@@ -157,6 +189,9 @@ function RowName() {
         }}
         onMouseOut={() => {
           setIsHovered(false);
+        }}
+        onClick={() => {
+          navigate("/about");
         }}
       >
         W
@@ -172,6 +207,9 @@ function RowName() {
         onMouseOut={() => {
           setIsHovered(false);
         }}
+        onClick={() => {
+          navigate("/about");
+        }}
       >
         A
       </h1>
@@ -185,6 +223,9 @@ function RowName() {
         }}
         onMouseOut={() => {
           setIsHovered(false);
+        }}
+        onClick={() => {
+          navigate("/about");
         }}
       >
         L

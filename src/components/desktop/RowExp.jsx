@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { SiCss3 } from "react-icons/si";
+import { useNavigate } from "react-router-dom";
 
 function RowExp() {
   const [isHovered, setIsHovered] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <>
@@ -17,6 +19,9 @@ function RowExp() {
         onMouseOut={() => {
           setIsHovered(false);
         }}
+        onClick={() => {
+          navigate("/experience");
+        }}
       >
         E
       </h1>
@@ -30,6 +35,9 @@ function RowExp() {
         }}
         onMouseOut={() => {
           setIsHovered(false);
+        }}
+        onClick={() => {
+          navigate("/experience");
         }}
       >
         X
@@ -45,6 +53,9 @@ function RowExp() {
         onMouseOut={() => {
           setIsHovered(false);
         }}
+        onClick={() => {
+          navigate("/experience");
+        }}
       >
         P
       </h1>
@@ -59,6 +70,9 @@ function RowExp() {
         onMouseOut={() => {
           setIsHovered(false);
         }}
+        onClick={() => {
+          navigate("/experience");
+        }}
       >
         E
       </h1>
@@ -72,6 +86,9 @@ function RowExp() {
         }}
         onMouseOut={() => {
           setIsHovered(false);
+        }}
+        onClick={() => {
+          navigate("/experience");
         }}
       >
         R
@@ -87,6 +104,9 @@ function RowExp() {
         onMouseOut={() => {
           setIsHovered(false);
         }}
+        onClick={() => {
+          navigate("/experience");
+        }}
       >
         I
       </h1>
@@ -100,6 +120,9 @@ function RowExp() {
         }}
         onMouseOut={() => {
           setIsHovered(false);
+        }}
+        onClick={() => {
+          navigate("/experience");
         }}
       >
         E
@@ -115,6 +138,9 @@ function RowExp() {
         onMouseOut={() => {
           setIsHovered(false);
         }}
+        onClick={() => {
+          navigate("/experience");
+        }}
       >
         N
       </h1>
@@ -129,6 +155,9 @@ function RowExp() {
         onMouseOut={() => {
           setIsHovered(false);
         }}
+        onClick={() => {
+          navigate("/experience");
+        }}
       >
         C
       </h1>
@@ -142,6 +171,9 @@ function RowExp() {
         }}
         onMouseOut={() => {
           setIsHovered(false);
+        }}
+        onClick={() => {
+          navigate("/experience");
         }}
       >
         E

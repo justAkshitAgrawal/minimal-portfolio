@@ -24,6 +24,6 @@
 
 @layer components {
   .info {
-    @apply text-white cursor-pointer transition-all hover:underline;
+    @apply text-white transition-all hover:underline;
   }
 }

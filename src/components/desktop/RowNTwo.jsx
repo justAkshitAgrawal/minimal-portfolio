@@ -57,7 +57,7 @@ function RowNTwo() {
       <h1>X</h1>
       <h1>X</h1>
       <h1>X</h1>
-      <SiReact className=" mt-1 text-[#5ed3f3]/50 hover:text-[#5ed3f3] transition-all" />
+      <SiReact className=" mt-1 text-[#5ed3f3]/50 hover:text-[#5ed3f3] transition-all animate-spin-slow" />
       <h1>X</h1>
       <h1>X</h1>
       <h1>X</h1>
